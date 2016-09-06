@@ -1,0 +1,9 @@
+﻿@model BarAppTrial.Models.DrinkListViewModel
+
+@* COCKTAIL MENU VIEW *@
+
+@foreach(var m in Model.TheDrinksListView)
+{
+    @Html.Partial("DrinkSummary", m)
+}
+
